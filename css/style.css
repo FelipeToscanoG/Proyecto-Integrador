@@ -2,7 +2,7 @@
     width: 112px; /* 180px/ 1180px*/
     border-radius: 90px;
     border: 1px solid #ccc;
-    margin: 30px 0px 30px 15px;
+    margin: 30px 80px 30px 15px;
 }
 
 .navegador ul{
@@ -10,13 +10,13 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    width: 1300px;
+    width: 1600px;
     margin: 0px 0px;
 }
 
 .nav{
-    padding-top: 30px;
-    padding-left: 20px;
+    padding-top: 35px;
+    padding-left: 35px;
 }
 
 .navegador li{
@@ -30,17 +30,18 @@
     text-transform: uppercase;
     color: rgb(221, 144, 0);
     font-family: 'Faustina', serif;
+    font-size: 110%;
     text-decoration: none;
     padding: 30px 17px;
 }
 
 .buscar {
-    padding-top: 55px;
+    padding-top: 65px;
     padding-left: 100px;
 }
 
 .logofooter{
-    width: 90px; /* 180px/ 1180px*/
+    width: 90px;
     margin-bottom: 30px;
     border-radius: 90px;
     margin-left: 50px;
@@ -52,7 +53,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: right;
-    width: 1180px;
+    width: 1500px;
     color: white;
 }
 
@@ -83,18 +84,22 @@
 }
 
 .nom{
-    padding-left: 20px;
-    padding-top: 30px;
+    padding: 30px 100px 0px 20px;
     font-family: 'Merienda One', cursive;
     color: rgb(255, 160, 36);
     font-size: 170%;
+    text-align: left;
 }
 
 html{
     background-color: black;
 }
 
-
+.imagenprincipal{
+    height: 425px;
+    padding-top: 35px;
+    width: 101%;
+}
 
 
 
