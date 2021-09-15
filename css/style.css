@@ -52,7 +52,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: right;
     width: 1500px;
     color: white;
 }
@@ -67,11 +66,15 @@
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    padding: 30px 0px;
+    padding: 50px 0px;
+}
+
+.participantes{
+    padding-top: 70px;
 }
 
 .separación{
-    padding-left: 300px;
+    padding-left: 500px;
     padding-top: 30px;
     justify-content: right;
     font-size: 160%;
@@ -83,7 +86,7 @@
     font-size: 160%;
 }
 
-.nom{
+.nombre{
     padding: 30px 100px 0px 20px;
     font-family: 'Merienda One', cursive;
     color: rgb(255, 160, 36);
@@ -95,12 +98,51 @@ html{
     background-color: black;
 }
 
-.imagenprincipal{
+.banner{
     height: 425px;
     padding-top: 35px;
-    width: 101%;
+    width: 100%;
 }
 
+.populares{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 40px 10px;
+}
 
+h2{
+    color: azure;
+    padding: 25px;
+    font-family: 'Merienda One', cursive;
+    font-size: xx-large;
+}
 
+.articulos img{
+    width: 240px;
+    height: 300px;
+    text-align: left;
+    padding: 10px 15px 7px 7px; 
+    background-color: rgb(41, 41, 41);
+}
 
+.articulos p{
+    color: rgb(255, 193, 78);
+    font-family: 'Vollkorn', serif;
+    font-size: medium;
+    padding-left: 10px;
+}
+
+.articulos h3{
+    color: rgb(221, 144, 0);
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+.articulos{
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    border: 5px solid rgb(221, 144, 0);
+}
