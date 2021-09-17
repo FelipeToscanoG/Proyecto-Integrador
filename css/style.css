@@ -35,12 +35,28 @@
     padding: 30px 17px;
 }
 
-.buscar {
-    padding-top: 65px;
-    padding-left: 100px;
+.buscar{
+    display: flex;
+    padding-top: 55px;
+    padding-left: 50px;
 }
 
-.logofooter{
+.buscar input{
+    height: 33px;
+    margin: 18px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+.buscar button{
+    width: 20px;
+    height: 20px;
+    color: #141414;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+.logoFooter{
     width: 90px;
     margin-bottom: 30px;
     border-radius: 90px;
@@ -123,7 +139,7 @@ h2{
 .articulos img{
     width: 240px;
     height: 300px;
-    text-align: left;
+    align-items: center;
     padding: 10px 15px 7px 7px; 
     background-color: rgb(41, 41, 41);
 }
@@ -145,6 +161,7 @@ h2{
     background-color: rgb(41, 41, 41);
     border-radius: 10px;
     border: 5px solid rgb(221, 144, 0);
+    align-items: center;
 }
 
 /* CSS DE DETALLE DE PELICULAS */
@@ -211,7 +228,7 @@ h5{
 
 /* CSS DE DETALLE DE SERIES */
 
-.mainHow{
+.mainFriends{
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -219,7 +236,7 @@ h5{
     border: 7px solid rgb(230, 159, 7);
 }
 
-.infoHow{
+.infoFriends{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -233,13 +250,13 @@ h5{
 }
 
 
-.imagenHow img{
+.imagenFriends img{
     height: 610px;
     border: 5px solid rgb(252, 252, 252);
 }
 
 
-.listaHow li{
+.listaFriends li{
     list-style-type: none;
     justify-content: left;
     font-size: 24px;
@@ -247,7 +264,7 @@ h5{
     color: white;
 }
 
-.listaHow a{
+.listaFriends a{
     text-decoration: none;
     color: white;
 }
