@@ -30,7 +30,7 @@
     text-transform: uppercase;
     color: rgb(221, 144, 0);
     font-family: 'Faustina', serif;
-    font-size: 110%;
+    font-size: 120%;
     text-decoration: none;
     padding: 30px 17px;
 }
@@ -146,13 +146,117 @@ h2{
     border-radius: 10px;
     border: 5px solid rgb(221, 144, 0);
 }
-#detalle{
-    color: white;
+
+/* CSS DE DETALLE DE PELICULAS */
+
+.mainLuca{
     display: flex;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 40px 10px 0px 30px;
+    border: 7px solid rgb(230, 159, 7);
 }
 
-#detalle .descripcion > *{
+.infoluca{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+}
 
-    padding: 10px 25px;
+.descripcion{
+    padding: 0px 15px;
+    color: white;
+    background-color: rgb(37, 36, 36);
+}
+
+
+.imagenluca img{
+    height: 610px;
+    border: 5px solid rgb(252, 252, 252);
+}
+
+.botonFav{
+    border-radius: 10px;
+    border: 10px solid rgb(221, 144, 0);
+    background-color: rgb(221, 144, 0);
+    font-size: x-large;
+    font-family: 'Acme', sans-serif;
+    margin: 30px 0px 40px 25px;  
+}
+
+.listaLuca li{
+    list-style-type: none;
+    justify-content: left;
+    font-size: 24px;
+    padding-bottom: 17px;
+    color: white;
+}
+
+.listaLuca a{
+    text-decoration: none;
+    color: white;
+}
+
+h4{
+    color: rgb(255, 187, 0);
+    padding: 15px;
+    font-family: 'Merienda One', cursive;
+    font-size: xx-large;
+}
+
+h5{
+    font-size: x-large;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.parrafo{
+    font-size: 22px;
+    padding: 10px 0px 0px 20px;
+}
+
+/* CSS DE DETALLE DE SERIES */
+
+.mainHow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 40px 10px 0px 30px;
+    border: 7px solid rgb(230, 159, 7);
+}
+
+.infoHow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.descripcion{
+    padding: 0px 15px;
+    color: white;
+    background-color: rgb(37, 36, 36);
+}
+
+
+.imagenHow img{
+    height: 610px;
+    border: 5px solid rgb(252, 252, 252);
+}
+
+
+.listaHow li{
+    list-style-type: none;
+    justify-content: left;
+    font-size: 24px;
+    padding-bottom: 17px;
+    color: white;
+}
+
+.listaHow a{
+    text-decoration: none;
+    color: white;
 }
