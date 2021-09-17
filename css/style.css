@@ -151,24 +151,16 @@ h2{
 
 .mainLuca{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
     margin: 40px 10px 0px 30px;
     border: 7px solid rgb(230, 159, 7);
 }
 
-.infoluca{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: left;
-}
-
 .descripcion{
     padding: 0px 15px;
     color: white;
-    background-color: rgb(37, 36, 36);
+    background-color: rgb(15, 15, 15);
 }
 
 
@@ -221,7 +213,6 @@ h5{
 
 .mainHow{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
     margin: 40px 10px 0px 30px;
