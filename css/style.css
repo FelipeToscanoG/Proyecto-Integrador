@@ -276,6 +276,7 @@ h5{
     color: white;
 }
 
+ 
 /* GENEROS */
 
 .mainGeneros{
@@ -313,3 +314,56 @@ h5{
     display: flex; /* permite alinear los elementos que estan dentro */
     flex-wrap: wrap; /*  respeta el tamaño de esos elementos */
 }
+
+/*Favoritos*/
+.favoritos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 120px 40px 120px;  
+}
+/* Para centrar Titulo */
+.tituloFavoritos{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.tituloFavoritos h2{
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    border: 2px solid rgb(221, 144, 0);
+    width: 600px;
+}
+
+/* Estilo para las Peliculas */
+
+.articulosFavoritos{
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    border: 5px solid rgb(221, 144, 0);
+    align-items: center;
+}
+
+.articulosFavoritos img{
+    width: 240px;
+    height: 300px;
+    align-items: center;
+    padding: 10px 15px 7px 7px; 
+    background-color: rgb(41, 41, 41);
+}
+
+.articulosFavoritos p{
+    color: rgb(255, 193, 78);
+    font-family: 'Vollkorn', serif;
+    font-size: medium;
+    padding-left: 10px;
+}
+
+.articulosFavoritos h3{
+    color: rgb(221, 144, 0);
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+
