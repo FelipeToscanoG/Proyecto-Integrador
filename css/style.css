@@ -367,3 +367,27 @@ h5{
     text-align: center;
 }
 
+
+@media (max-width: 600px) {
+
+
+    /*Agregar el codigo para header y footer*/
+    /* Generos */
+   .mainGeneros {
+        width: 100%;
+        padding: 0px 0px 10px 0px;    
+    }
+
+    .listadoGeneros {
+    display: block;
+    }
+
+   .listadoGeneros li{
+   margin-top: 50px;
+    }
+     /* Detalles Generos */
+    .detalleGenero {
+    justify-content: center;
+    }
+}
+
