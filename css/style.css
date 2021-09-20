@@ -315,7 +315,9 @@ h5{
     flex-wrap: wrap; /*  respeta el tamaño de esos elementos */
 }
 
+
 /*Favoritos*/
+
 .favoritos{
     display: flex;
     flex-direction: row;
@@ -365,7 +367,9 @@ h5{
     color: rgb(221, 144, 0);
     font-family: 'Architects Daughter', cursive;
     text-align: center;
+    
 }
+
 
 
 @media (max-width: 600px) {
@@ -389,5 +393,12 @@ h5{
     .detalleGenero {
     justify-content: center;
     }
+}
+
+
+/* MEDIA QUIRES */
+
+@media (max-width:420px){
+
 }
 
