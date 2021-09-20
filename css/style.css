@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    width: 1600px;
+    width: 100vw;
     margin: 0px 0px;
 }
 
@@ -68,7 +68,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1500px;
+    width: 100vw;
     color: white;
 }
 
@@ -188,7 +188,7 @@ h2{
 }
 
 
-.imagenluca img{
+.imagenLuca img{
     height: 610px;
     border: 5px solid rgb(252, 252, 252);
 }
@@ -372,7 +372,108 @@ h5{
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 420px) {
+
+    /* HEADER */
+
+    .logo{
+        margin: 30px 0px 10px 0px;
+        justify-content: center;
+    }
+
+    .navegador li{
+        text-align: center;
+        list-style-type: none;
+        font-size: 150%;
+    }
+
+    .nav{
+        padding-left: 0px;
+    }
+
+    .navegador a{
+        padding: 0px 15px;
+    }
+
+    .logoSpotlight{
+        width: 100vw;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .buscar{
+        padding-left: 0px;
+        justify-content: center;
+    }
+
+    /* FOOTER */
+
+    .participantes ul{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logoFooter{
+        width: 90px;
+        margin-bottom: 30px;
+        border-radius: 90px;
+        margin-left: 0px;
+        border: 1px solid #ccc;
+    }
+    
+    .participantes li{
+        text-align: center;
+        list-style-type: none;
+    }
+    
+    .separación{
+        padding-left: 0px;
+        padding-top: 35px;
+        justify-content: center;
+        font-size: 150%;
+    }
+    
+    .separación2{
+        padding-top: 0px;
+        justify-content: center;
+        font-size: 150%;
+    }
+    
+    .nombre{
+        padding: 0px;
+    }
+
+    /* DETAIL.MOVIE */
+
+    .mainLuca{
+        width: 100%;
+        display: block;
+        justify-content: center;
+        padding: 20px;
+        margin: 40px 0px 0px 0px;
+        border: 7px solid rgb(230, 159, 7);
+    }
+
+    .imagenLuca img{
+        height: 410px;
+    }
+
+    /* DETAIL.SERIE */
+
+    .mainFriends{
+        width: 100%;
+        display: block;
+        justify-content: center;
+        padding: 20px;
+        margin: 40px 0px 0px 0px;
+        border: 7px solid rgb(230, 159, 7);
+    }
+
+    .imagenFriends img{
+        height: 410px;
+    }
 
 
     /*Agregar el codigo para header y footer*/
@@ -389,16 +490,10 @@ h5{
    .listadoGeneros li{
    margin-top: 50px;
     }
+
      /* Detalles Generos */
+
     .detalleGenero {
     justify-content: center;
     }
 }
-
-
-/* MEDIA QUIRES */
-
-@media (max-width:420px){
-
-}
-
