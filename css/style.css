@@ -508,4 +508,31 @@ h5{
     .detalleGenero {
     justify-content: center;
     }
+   
+    /* Home */
+    .banner {
+       width: 100%;
+    }
+    .populares{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .populares img{
+        width:80% ;
+    }
+    /* Favoritos */ /* Aplica tambien para resultados busqueda porque tiene las mismas clases */
+    .tituloFavoritos{
+      display: block; 
+      flex-direction: column;
+        margin-left: 2%;
+        
+    }
+    .favoritos{
+        flex-direction: column;
+    }
+
+
+   
+
 }
