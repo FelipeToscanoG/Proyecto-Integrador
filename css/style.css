@@ -516,6 +516,7 @@ h5{
     .populares img{
         width:80% ;
     }
+
     /* Favoritos */ /* Aplica tambien para resultados busqueda porque tiene las mismas clases */
     .tituloFavoritos{
         margin: 30px;
