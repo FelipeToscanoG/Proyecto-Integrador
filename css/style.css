@@ -511,7 +511,8 @@ h5{
    
     /* Home */
     .banner {
-       width: 100%;
+       width: 110vw;
+       height: 200px;
     }
     .populares{
         display: block;
@@ -523,16 +524,26 @@ h5{
     }
     /* Favoritos */ /* Aplica tambien para resultados busqueda porque tiene las mismas clases */
     .tituloFavoritos{
-      display: block; 
-      flex-direction: column;
-        margin-left: 2%;
-        
+        margin: 30px;
     }
+
+    .tituloFavoritos h2{
+        text-align: center;
+        background-color: rgb(41, 41, 41);
+        border-radius: 10px;
+        border: 2px solid rgb(221, 144, 0);
+        width: 80vw;
+        font-size: large;
+        justify-content: center;
+    }
+
     .favoritos{
         flex-direction: column;
+        margin-top: 20px;
     }
 
-
-   
-
+    .articulosFavoritos{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
 }
