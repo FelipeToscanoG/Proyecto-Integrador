@@ -1,3 +1,7 @@
+html{
+    background-color: black;
+}
+
 /* HEADER */
 
 .logo{
@@ -109,9 +113,7 @@
     text-align: left;
 }
 
-html{
-    background-color: black;
-}
+/* HOME CSS */
 
 .banner{
     height: 425px;
