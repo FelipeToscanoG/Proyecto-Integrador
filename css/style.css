@@ -88,14 +88,6 @@
     list-style-type: none;
 }
 
-.participantes a{
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    padding: 50px 0px;
-}
-
 .participantes{
     padding-top: 70px;
 }
