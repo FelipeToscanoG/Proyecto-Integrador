@@ -121,7 +121,7 @@ html{
     width: 100%;
 }
 
-.populares{
+.populares .seriesPopulares .masVistas{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -508,7 +508,7 @@ h5{
        width: 110vw;
        height: 200px;
     }
-    .populares{
+    .populares .seriesPopulares .masVistas{
         display: block;
         flex-direction: column;
         justify-content: center;
