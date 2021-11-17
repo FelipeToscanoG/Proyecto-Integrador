@@ -121,13 +121,29 @@ html{
     width: 100%;
 }
 
-.populares .seriesPopulares .masVistas{
+.populares{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px 40px 10px;
+}
+.seriesPopulares{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 40px 10px;   
+}
+.masVistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 40px 10px;  
 }
 
 h2{
