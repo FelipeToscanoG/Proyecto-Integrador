@@ -8,14 +8,15 @@ let urlPeliculas = 'https://api.themoviedb.org/3/movie/popular?api_key=79a65e98b
         console.log(data.results);//Para chequear que los datos de la api llegan bien
         let populares = document.querySelector('.populares')
         let elementosPopulares = ''; //Se actualiza con los datos del endpoint
+        let info = data.results;
         for(let i=0; i<5; i++) {
             elementosPopulares+= `<article class="articulos">
-                                        <h3>${data.results[i].title}</h3>
+                                        <h3>${info[i].title}</h3>
                                         <a href="./detail-movie.html">
-                                            <img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
+                                            <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
                                         </a>
-                                        <p>${data.results[i].release_date}</p>
-                                </article>`
+                                        <p>${info[i].release_date}</p>
+                                </article>`// modifico el article de la seccion con los datos de la api
         };
         populares.innerHTML=elementosPopulares
 
