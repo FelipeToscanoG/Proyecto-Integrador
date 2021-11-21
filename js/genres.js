@@ -13,7 +13,7 @@ fetch(url_peliculas)
 
             ul.innerHTML += `
                 <li>
-                    <a href="movies-genres.html?id=${response.genres[i].id}">${ response.genres[i].name }</a>
+                    <a href="details-genres.html?id=${response.genres[i].id}">${ response.genres[i].name }</a>
                 </li>
             `
         }
@@ -33,7 +33,7 @@ fetch(url_series)
 
         ul.innerHTML += `
             <li>
-                <a href="series-genres.html?id=${response.genres[i].id}">${ response.genres[i].name }</a>
+                <a href="details-genres.html?id=${response.genres[i].id}">${ response.genres[i].name }</a>
             </li>
         `
     }
