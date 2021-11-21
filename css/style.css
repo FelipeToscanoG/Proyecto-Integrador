@@ -65,14 +65,14 @@ html{
 /* FOOTER */
 
 .logoFooter{
-    width: 90px;
+    width: 120px;
     margin-bottom: 30px;
-    border-radius: 90px;
+    border-radius: 10px;
     margin-left: 50px;
     border: 1px solid #ccc;
 }
 
-.logoNombre{
+.logoTmdb{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -106,9 +106,9 @@ html{
 }
 
 .nombre{
-    padding: 30px 100px 0px 20px;
+    padding: 10px 100px 0px 20px;
     font-family: 'Merienda One', cursive;
-    color: rgb(255, 160, 36);
+    color: rgb(28, 151, 160);
     font-size: 170%;
     text-align: left;
 }
@@ -328,9 +328,22 @@ h5{
 
 /* detalle genero */
 
-.detalleGenero{
-    display: flex; /* permite alinear los elementos que estan dentro */
-    flex-wrap: wrap; /*  respeta el tamaño de esos elementos */
+.detalleGeneroPeliculas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px;
+}
+
+.detalleGeneroSeries{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
 }
 
 
