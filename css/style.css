@@ -1,3 +1,7 @@
+html{
+    background-color: black;
+}
+
 /* HEADER */
 
 .logo{
@@ -88,14 +92,6 @@
     list-style-type: none;
 }
 
-.participantes a{
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    padding: 50px 0px;
-}
-
 .participantes{
     padding-top: 70px;
 }
@@ -117,9 +113,7 @@
     text-align: left;
 }
 
-html{
-    background-color: black;
-}
+/* HOME CSS */
 
 .banner{
     height: 425px;
@@ -134,6 +128,22 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px 40px 10px;
+}
+.seriesPopulares{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 40px 10px;   
+}
+.masVistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 40px 10px;  
 }
 
 h2{
@@ -514,7 +524,7 @@ h5{
        width: 110vw;
        height: 200px;
     }
-    .populares{
+    .populares .seriesPopulares .masVistas{
         display: block;
         flex-direction: column;
         justify-content: center;
@@ -522,6 +532,7 @@ h5{
     .populares img{
         width:80% ;
     }
+
     /* Favoritos */ /* Aplica tambien para resultados busqueda porque tiene las mismas clases */
     .tituloFavoritos{
         margin: 30px;
