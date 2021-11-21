@@ -289,7 +289,7 @@ h5{
 .mainGeneros{
     width: 80%;
     border: 7px solid rgb(230, 159, 7);
-    padding: 30px;
+    padding: 30px; 
     margin: 0 auto;
 }
 
@@ -305,7 +305,7 @@ h5{
 
 
 .listadoGeneros a{
-    border-radius: 10px;
+    border-radius: 10px; 
     border: 10px solid rgb(221, 144, 0);
     background-color: rgb(221, 144, 0);
     font-size: x-large;
