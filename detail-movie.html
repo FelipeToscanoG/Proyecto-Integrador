@@ -48,7 +48,7 @@
         <!-- Imagen de película -->
         <section>
             <div class="imagenLuca">
-                <img src="img/Luca.jpg" alt="Luca">
+                <img id="portada">
             </div>
         </section>
 
@@ -57,22 +57,20 @@
         </section>
         <article>
             <div class="descripcion">
-                <h4>Luca</h4>
+                <h4 id="titulo">Luca</h4>
                 <div>
-                    <h5>Fecha de estreno: 18 de Junio de 2021</h5>
+                    <h5 id="estreno"></h5>
                     <ul class="listaLuca">
-                        <li>Calificación: 7/10</li>
-                        <li><a href="./details-genres.html">Género: Acción</a></li>
-                        <li>Duración: 101 minutos</li>
+                        <li id="calificacion">Calificación: 7/10</li>
+                        <li><a href="" id="genero"></a></li>
+                        <li id="duracion"></li>
                     </ul>
                 </div>
-                <p class="parrafo">Luca es un monstruo marino que vive debajo de un pueblo de la costa italiana. Cuando
-                    sale a la superficie, adquiere una apariencia humana y conoce a un nuevo amigo, igual que él. Juntos
-                    emprenden yna aventura entre humanos que odian a los monstruos.</p>
-                 <div> <div>
-                        <button class="botonFav" id="agregar" style="display:none">⭐ Agregar a favoritos ⭐</button>
-                        <button class="botonFav" id="quitar" style="display:none">⭐ Quitar de favoritos ⭐</button>
-                    </div> </div>
+                <p class="parrafo" id="sinopsis"></p>
+                <div>
+                    <button class="botonFav" id="agregar" style="display:none">⭐ Agregar a favoritos ⭐</button>
+                    <button class="botonFav" id="quitar" style="display:none">⭐ Quitar de favoritos ⭐</button>
+                </div>
             </div>
         </article>
         </section>
@@ -101,6 +99,7 @@
         </div>
 
     </footer>
+
     <script src="js/detail-movie.js"></script>
 </body>
 
