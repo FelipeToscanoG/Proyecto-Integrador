@@ -35,13 +35,14 @@ let urlPeliculas = 'https://api.themoviedb.org/3/movie/popular?api_key=79a65e98b
       console.log(data.results);//Para chequear que los datos de la api llegan bien
       let seriesPopulares = document.querySelector('.seriesPopulares')
       let elementosPopularesSeries = ''; //Se actualiza con los datos del endpoint
+      let info = data.results;
       for(let i=0; i<5; i++) {
           elementosPopularesSeries+= `<article class="articulos">
-                                      <h3>${data.results[i].name}</h3>
-                                      <a href="./detail-serie.html?id=${data.results[i].id}">
-                                          <img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
+                                      <h3>${info[i].name}</h3>
+                                      <a href="./detail-serie.html?id=${info[i].id}">
+                                          <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
                                       </a>
-                                      <p>${data.results[i].first_air_date}</p>
+                                      <p>${info[i].first_air_date}</p>
                               </article>`
       };
       seriesPopulares.innerHTML=elementosPopularesSeries
@@ -61,13 +62,14 @@ let urlPeliculas = 'https://api.themoviedb.org/3/movie/popular?api_key=79a65e98b
       console.log(data.results);//Para chequear que los datos de la api llegan bien
       let masVistas = document.querySelector('.masVistas')
       let elementosMasVistas = ''; //Se actualiza con los datos del endpoint
+      let info = data.results;
       for(let i=0; i<5; i++) {
           elementosMasVistas+= `<article class="articulos">
-                                      <h3>${data.results[i].title}</h3>
-                                      <a href="./detail-serie.html?id=${data.results[i].id}">
-                                          <img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
+                                      <h3>${info[i].title}</h3>
+                                      <a href="./detail-serie.html?id=${info[i].id}">
+                                          <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
                                       </a>
-                                      <p>${data.results[i].release_date}</p>
+                                      <p>${info[i].release_date}</p>
                               </article>`
       };
       masVistas.innerHTML=elementosMasVistas

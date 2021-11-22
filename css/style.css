@@ -356,6 +356,20 @@ h5{
     align-items: center;
     padding: 30px 120px 40px 120px;  
 }
+.favoritosSeries{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 120px 40px 120px;  
+}
+.favoritosPeliculas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 120px 40px 120px;  
+}
 .buscados {
     display: flex;
     flex-direction: row;
@@ -367,6 +381,13 @@ h5{
     color: rgb(221, 144, 0);
     font-family: 'Architects Daughter', cursive;
     text-align: center;
+}
+.mensajeFav{ 
+    color: rgb(255, 187, 0);
+    padding: 15px;
+    font-family: 'Merienda One', cursive;
+    font-size: xx-large;
+
 }
 /* Para centrar Titulo */
 .tituloFavoritos{
