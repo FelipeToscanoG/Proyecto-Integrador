@@ -32,20 +32,30 @@ fetch (url)
         let resultados = document.querySelector (".buscados")
         let elementosResultados = '';
         if (info.length == 0){
-            resultados.innerHTML=`<p class=sinResultados>No hay coincidencias con su busqueda</p>` 
+            resultados.innerHTML+=`<p class=sinResultados>No hay coincidencias con su busqueda</p>` 
         } else { 
-
+            for (let i=0; i<info.length; i++){
+                if (info[i].poster_path == null){
+                elementosResultados+= `<article class="articulos">
+                                             <h3>${info[i].title}</h3>
+                                            <a href="./detail-movie.html?id=${info[i].id}">
+                                                <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
+                                             </a>
+                                             <p>${info[i].release_date}</p>
+                                        </article>`
+            }else {
+                elementosResultados+=`<article class="articulos">
+                                                <h3>${info[i].title}</h3>
+                                                <a href="./detail-movie.html?id=${info[i].id}">
+                                                     <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
+                                                 </a>
+                                                 <p>${info[i].release_date}</p>
+                                        </article>`
+            }
+            resultados.innerHTML=elementosResultados
         }
-        for (let i=0; i<info.length; i++){
-            elementosResultados+= `<article class="articulos">
-                                         <h3>${info[i].title}</h3>
-                                        <a href="./detail-movie.html?id=${info[i].id}">
-                                            <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
-                                         </a>
-                                         <p>${info[i].release_date}</p>
-                                    </article>`
-        };
-        resultados.innerHTML=elementosResultados
+        
+        
     })
     .catch(function(error){
         console.log (error);
