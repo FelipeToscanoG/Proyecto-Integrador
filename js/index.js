@@ -12,7 +12,7 @@ let urlPeliculas = 'https://api.themoviedb.org/3/movie/popular?api_key=79a65e98b
         for(let i=0; i<5; i++) {
             elementosPopulares+= `<article class="articulos">
                                         <h3>${info[i].title}</h3>
-                                        <a href="./detail-movie.html">
+                                        <a href="./detail-movie.html?id=${info[i].id}">
                                             <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
                                         </a>
                                         <p>${info[i].release_date}</p>
@@ -38,7 +38,7 @@ let urlPeliculas = 'https://api.themoviedb.org/3/movie/popular?api_key=79a65e98b
       for(let i=0; i<5; i++) {
           elementosPopularesSeries+= `<article class="articulos">
                                       <h3>${data.results[i].name}</h3>
-                                      <a href="./detail-serie.html">
+                                      <a href="./detail-serie.html?id=${data.results[i].id}">
                                           <img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
                                       </a>
                                       <p>${data.results[i].first_air_date}</p>
@@ -64,7 +64,7 @@ let urlPeliculas = 'https://api.themoviedb.org/3/movie/popular?api_key=79a65e98b
       for(let i=0; i<5; i++) {
           elementosMasVistas+= `<article class="articulos">
                                       <h3>${data.results[i].title}</h3>
-                                      <a href="./detail-serie.html">
+                                      <a href="./detail-serie.html?id=${data.results[i].id}">
                                           <img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
                                       </a>
                                       <p>${data.results[i].release_date}</p>

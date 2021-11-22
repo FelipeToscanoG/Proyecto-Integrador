@@ -30,12 +30,13 @@ fetch(link)
     estreno.innerText = `Fecha de estreno: ${response.release_date}`;
 
     calificacion.innerText = `Calificación: ${response.vote_average}/10`;
+    if(response.genres.length>0){
+        genero.innerText = `Género: ${response.genres[0].name}`;
+        genero.href = `./details-genres.html?es=pelicula&genero=${response.genres[0].name}&id=${response.genres[0].id}`;
+    }
     
-    genero.innerText = `Género: ${response.genres[0].name}`;
 
-    genero.href = `./details-genres.html?es=pelicula&genero=${response.genres[0].name}&id=${response.genres[0].id}`;
-
-    sinopsis.innerText = `Sinopsis: ${response.overview}`;
+   sinopsis.innerText = `Sinopsis: ${response.overview}`;
 
     portada.src = `https://image.tmdb.org/t/p/w342${response.backdrop_path}`;
 
