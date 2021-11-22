@@ -54,10 +54,10 @@ let urlPeliculas = 'https://api.themoviedb.org/3/movie/popular?api_key=79a65e98b
   //Peliculas mas vistas
   let urlMasVistas = 'https://api.themoviedb.org/3/movie/top_rated?api_key=79a65e98ba579efaab8bd7a94804c88f'
   fetch(urlMasVistas)
-  .then (function(response){
+    .then (function(response){
       return response.json()
-  })
-  .then(function(data){
+    })
+    .then(function(data){
       console.log(data.results);//Para chequear que los datos de la api llegan bien
       let masVistas = document.querySelector('.masVistas')
       let elementosMasVistas = ''; //Se actualiza con los datos del endpoint
@@ -73,6 +73,6 @@ let urlPeliculas = 'https://api.themoviedb.org/3/movie/popular?api_key=79a65e98b
       masVistas.innerHTML=elementosMasVistas
 
   })
-  .catch(function(error){
+    .catch(function(error){
       console.log (error);
-  })
+     })

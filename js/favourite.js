@@ -1,9 +1,11 @@
 //Para recuperaar los ids del webstorage
-let recuperarStorage = localStorage.getItem(''); //Tengo que completar con la variable que hagan en detalle
+let recuperarStorage = localStorage.getItem('peliculas'); 
 let favoritos = JSON.parse(recuperarStorage); //el array esta en json entonces lo pasp a cadena de texto
 
 let seccionFavoritos = document.querySelector('.favoritos');
 let elementosFavoritos = '';
+
+//si no guardo nada en favoritos
 //necesito recorrer el array
 for (let i=0; i<favoritos.length; i++){
     //llamo a la api
