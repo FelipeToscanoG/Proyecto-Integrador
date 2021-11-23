@@ -46,7 +46,7 @@ fetch(urlPeliculasEnGeneros)
         let elementosPeliculas = ''; //Se actualiza con los datos del endpoint 
         for (let i = 0; i < 5; i++) {
             elementosPeliculas += `<article class="articulos">
-                                    <a href="./detail-movie.html"><img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE"></a>
+                                    <a href="./detail-movie.html?id=${data.results[i].id}"><img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE"></a>
                                     <h3>${data.results[i].title}</h3>
                                     </article>`
 
@@ -78,7 +78,7 @@ fetch(urlSeriesEnGeneros)
         let elementosSeries = ''; //Se actualiza con los datos del endpoint 
         for (let i = 0; i < 5; i++) {
             elementosSeries += `<article class="articulos">
-                                <a href="./detail-serie.html"><img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE"></a>
+                                <a href="./detail-serie.html?id=${data.results[i].id}"><img src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="IMAGEN NO DISPONIBLE"></a>
                                 <h3>${data.results[i].original_name}</h3>
                                 </article>`
 
