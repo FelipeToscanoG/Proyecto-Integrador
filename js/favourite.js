@@ -12,7 +12,7 @@ if (recuperarStorage == null || favoritos.length == 0) {
 }
 for (let i = 0; i < favoritos.length; i++) {
     //llamo a la api
-    let url = `https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=79a65e98ba579efaab8bd7a94804c88f `;
+    let url = `https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=599a1fd3a6e93c77c41f6489c070ec8c`;
     fetch(url)
         .then(function (response) {
             return response.json();
@@ -48,8 +48,8 @@ if (recuperarStorageSeries == null || favoritosSeries.length == 0) {
 //necesito recorrer el array
 for (let i = 0; i < favoritosSeries.length; i++) {
     //llamo a la api
-    let url = `https://api.themoviedb.org/3/tv/${favoritosSeries[i]}?api_key=79a65e98ba579efaab8bd7a94804c88f `;
-    fetch(url)
+    let urlS = `https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=599a1fd3a6e93c77c41f6489c070ec8c`;
+    fetch(urlS)
         .then(function (response) {
             return response.json();
         })
