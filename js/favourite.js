@@ -20,14 +20,13 @@ for (let i = 0; i < favoritos.length; i++) {
         .then(function (data) {
             console.log(data);
             let elementosFavoritos = '';
-            let info = data.results;
             elementosFavoritos += `<article class="articulos">
-                                    <h3>${info[i].title}</h3>
-                                    <a href="./detail-movie.html?id=${info[i].id}">
-                                        <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
-                                     </a>
-                                    <p>${info[i].release_date}</p>
-                                </article>`
+                                        <h3>${data.title}</h3>
+                                        <a href="./detail-movie.html?id=${data.id}">
+                                            <img src="https://image.tmdb.org/t/p/w342${data.poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
+                                         </a>
+                                        <p>${data.release_date}</p>
+                                     </article>`
             peliculasFav.innerHTML = elementosFavoritos
         })
         .catch(function (error) {
@@ -44,7 +43,7 @@ let seriesFav = document.querySelector('.favoritosSeries');
 let series = [];
 //si no guardo nada en favoritos
 if (recuperarStorageSeries == null || favoritosSeries.length == 0) {
-    seriesFav.innerText = 'No seleccionaste series favoritas'
+    seriesFav.innerHTML = '<h2 class=mensajeFav>No seleccionaste series favoritas</h2>'
 }
 //necesito recorrer el array
 for (let i = 0; i < favoritosSeries.length; i++) {
@@ -56,15 +55,13 @@ for (let i = 0; i < favoritosSeries.length; i++) {
         })
         .then(function (data) {
             console.log(data);
-            let seccionFavoritosSeries = document.querySelector('.favoritosSeries');
             let elementosFavoritosSeries = '';
-            let info = data.results;
             elementosFavoritosSeries += `<article class="articulos">
-                                        <h3>${info[i].title}</h3>
-                                        <a href="./detail-movie.html?id=${info[i].id}">
-                                            <img src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
+                                        <h3>${data.title}</h3>
+                                        <a href="./detail-movie.html?id=${data.id}">
+                                            <img src="https://image.tmdb.org/t/p/w342${data.poster_path}" alt="IMAGEN NO DISPONIBLE-Portada">
                                          </a>
-                                        <p>${info[i].release_date}</p>
+                                        <p>${data.release_date}</p>
                                     </article>`
             favoritosSeries.innerHTML = elementosFavoritosSeries
         })
